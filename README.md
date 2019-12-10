@@ -5,6 +5,7 @@ Single Page Application with Sinatra
 
 1. Ruby-2.5.3
 2. Sinatra
+3. SQLite
 
 
 ## Project setup

@@ -1,22 +1,16 @@
-source 'https://rubygems.org'
+# A sample Gemfile
+source "https://rubygems.org"
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
-  "https://github.com/#{repo_name}.git"
-end
-
-
+# gem "rails"
 gem 'sinatra'
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'rake'
+gem 'require_all' #=> Helps to load dependencies
+gem 'sqlite3'
+gem 'thin'
 gem 'shotgun'
-gem 'puma'
-gem 'httparty'
-gem 'sinatra-r18n'
-gem 'json'
-# Sanitizer
-gem 'rails-html-sanitizer'
-
-group :development, :test do
-  gem 'pry'
-end
-
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'pry'
+gem 'bcrypt'
+gem 'rack-flash3'
+gem 'sinatra-flash'
